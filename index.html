@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You, Haritha ❤</title>
+  <title>Happy Birthday Haritha</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -37,12 +37,13 @@
     }
 
     .custom-cursor::after {
-      content: '❤';
+      content: '';
       position: absolute;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 6px;
-      line-height: 1;
+      width: 3px; height: 3px;
+      background: #e84393;
+      border-radius: 50%;
     }
 
     .custom-cursor.hovering {
@@ -1517,44 +1518,44 @@
     <div class="wax-seal"><span>H</span></div>
     <div class="envelope-body"></div>
     <div class="letter-card">
-      <p>My heart wrote this<br/>just for you, Haritha…</p>
+      <p>Something special<br/>awaits you, Haritha...</p>
     </div>
   </div>
-  <p class="envelope-hint">tap to open your love letter</p>
+  <p class="envelope-hint">tap to open</p>
 </div>
 
 <!-- ===== STAGE 1: INTRO ===== -->
 <div class="stage" id="stage1">
-  <p class="intro-title">A Love Letter</p>
-  <h1 class="intro-date">For You, Always</h1>
-  <p class="intro-for">Written from the heart for Haritha</p>
+  <p class="intro-title">A Little Something</p>
+  <h1 class="intro-date">April 21</h1>
+  <p class="intro-for">Exclusively for Haritha</p>
   <div class="countdown" id="countdown"></div>
-  <button class="begin-btn" onclick="startJourney()">Open Your Heart</button>
+  <button class="begin-btn" onclick="startJourney()">Begin the Journey</button>
 </div>
 
 <!-- ===== STAGE 2: LIGHT CANDLES ===== -->
 <div class="stage" id="stage2">
-  <p class="candles-prompt">Light each flame with a reason I love you</p>
+  <p class="candles-prompt">Tap each candle to light it</p>
   <div class="candles-row">
     <div class="candle-unit c1" onclick="lightCandle(this, 0)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f0"></div></div>
-      <p class="candle-label">your smile</p>
+      <p class="candle-label">joy</p>
     </div>
     <div class="candle-unit c2" onclick="lightCandle(this, 1)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f1"></div></div>
-      <p class="candle-label">your heart</p>
+      <p class="candle-label">love</p>
     </div>
     <div class="candle-unit c3" onclick="lightCandle(this, 2)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f2"></div></div>
-      <p class="candle-label">your soul</p>
+      <p class="candle-label">dreams</p>
     </div>
     <div class="candle-unit c4" onclick="lightCandle(this, 3)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f3"></div></div>
-      <p class="candle-label">your voice</p>
+      <p class="candle-label">light</p>
     </div>
     <div class="candle-unit c5" onclick="lightCandle(this, 4)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f4"></div></div>
-      <p class="candle-label">all of you</p>
+      <p class="candle-label">you</p>
     </div>
   </div>
   <p class="candles-counter" id="candleCount">0 / 5</p>
@@ -1563,16 +1564,16 @@
 <!-- ===== STAGE 3: BIRTHDAY WISH ===== -->
 <div class="stage" id="stage3">
   <div class="wish-stage">
-    <h1 class="wish-title">I Love You</h1>
+    <h1 class="wish-title">Happy Birthday</h1>
     <h2 class="wish-name"><span class="shimmer-letter" style="animation-delay:0s">H</span><span class="shimmer-letter" style="animation-delay:0.3s">a</span><span class="shimmer-letter" style="animation-delay:0.6s">r</span><span class="shimmer-letter" style="animation-delay:0.9s">i</span><span class="shimmer-letter" style="animation-delay:1.2s">t</span><span class="shimmer-letter" style="animation-delay:1.5s">h</span><span class="shimmer-letter" style="animation-delay:1.8s">a</span></h2>
     <div class="wish-lines" id="wishLines">
-      <p class="wish-line">You are the <strong>reason</strong> my heart beats differently.</p>
-      <p class="wish-line">Before you, I didn’t know what love felt like.</p>
-      <p class="wish-line">Now every moment with you feels like</p>
-      <p class="wish-line">the most beautiful chapter of my life.</p>
-      <p class="wish-line">You make me want to be <strong>better</strong>,</p>
-      <p class="wish-line">to love harder, to hold on tighter.</p>
-      <p class="wish-line">I am so <strong>deeply</strong> in love with you.</p>
+      <p class="wish-line">Today is <strong>your</strong> day.</p>
+      <p class="wish-line">The world feels warmer because of you.</p>
+      <p class="wish-line">May this year bring you quiet joys,</p>
+      <p class="wish-line">beautiful surprises,</p>
+      <p class="wish-line">and all the love your heart can hold.</p>
+      <p class="wish-line">You deserve every bit of happiness &mdash;</p>
+      <p class="wish-line">and <strong>infinitely</strong> more.</p>
     </div>
     <p class="tap-next" id="tapNext" onclick="revealNextLine()">tap to reveal each line</p>
   </div>
@@ -1580,32 +1581,32 @@
 
 <!-- ===== STAGE 4: GIFT BOXES ===== -->
 <div class="stage" id="stage4">
-  <p class="gifts-title">Reasons I Love You</p>
-  <p class="gifts-sub">Tap each one to uncover my heart</p>
+  <p class="gifts-title">Unwrap your wishes</p>
+  <p class="gifts-sub">Tap each box to reveal what's inside</p>
   <div class="gift-grid">
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">❤</span>
-      <div class="gift-reveal"><p>The way you look at me makes me feel like the luckiest person alive</p></div>
+      <span class="gift-icon">&#9733;</span>
+      <div class="gift-reveal"><p>May every star tonight remind you how special you are</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">✨</span>
-      <div class="gift-reveal"><p>Your laugh is my favourite sound in this entire universe</p></div>
+      <span class="gift-icon">&#9825;</span>
+      <div class="gift-reveal"><p>You are loved more than you will ever know</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">♡</span>
-      <div class="gift-reveal"><p>You make even the most ordinary moments feel like a fairy tale</p></div>
+      <span class="gift-icon">&#10047;</span>
+      <div class="gift-reveal"><p>May your days bloom like the most beautiful garden</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">∞</span>
-      <div class="gift-reveal"><p>My love for you has no end — it only grows deeper every day</p></div>
+      <span class="gift-icon">&#9790;</span>
+      <div class="gift-reveal"><p>Even the moon envies the glow you carry</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">✶</span>
-      <div class="gift-reveal"><p>You are my calm in every storm, my warmth in every cold night</p></div>
+      <span class="gift-icon">&#9728;</span>
+      <div class="gift-reveal"><p>Your smile could light up the darkest sky</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">❀</span>
-      <div class="gift-reveal"><p>I choose you — today, tomorrow, and every day after that</p></div>
+      <span class="gift-icon">&#8734;</span>
+      <div class="gift-reveal"><p>This is my wish for you &mdash; happiness without end</p></div>
     </div>
   </div>
   <button class="gifts-continue" id="giftsContinue" onclick="goFinale()">Continue</button>
@@ -1619,19 +1620,18 @@
       <source src="assets/background.mp4" type="video/mp4" />
     </video>
     <div class="collage-center">
-      <h2>Every Word Here Is for You</h2>
+      <h2>This Journey Was Made for You</h2>
       <div class="final-divider"></div>
       <p>
         Every click, every light, every word &mdash;<br>
-        was my way of saying what I can’t always say out loud.<br>
-        I love you, Haritha. More than you’ll ever know.
+        all of it was just for you, Haritha.
       </p>
     </div>
   </div>
 
   <div class="memories-section">
     <div class="mem-heading">
-      <h2>Our Story</h2>
+      <h2>Our Moments</h2>
       <div class="final-divider"></div>
     </div>
     <div class="tl">
@@ -1641,8 +1641,8 @@
           <div class="photo-slot"><img src="assets/Thedaywemet.jpg" alt="The day we met" /></div>
           <div class="tl-date">The Beginning</div>
           <h3 class="tl-title">The Day We Met</h3>
-          <p class="tl-text">Some moments change everything. Meeting you was the most beautiful accident of my life.</p>
-          <div class="tl-expanded"><p>I didn’t know it then, but that day, my heart chose you before my mind even understood why.</p></div>
+          <p class="tl-text">Some moments change everything. Meeting you was one of them.</p>
+          <div class="tl-expanded"><p>That day replays in my mind like a favourite scene &mdash; a small moment that rewrote everything after it.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1652,8 +1652,8 @@
           <div class="photo-slot"><img src="assets/FirstConvo.jpg" alt="First conversation" /></div>
           <div class="tl-date">A Cherished Day</div>
           <h3 class="tl-title">First Real Conversation</h3>
-          <p class="tl-text">When hours felt like seconds and silence felt comfortable.</p>
-          <div class="tl-expanded"><p>I remember thinking — I could listen to you talk forever and never get tired. That’s when I knew this was different.</p></div>
+          <p class="tl-text">When time stood still and everything just clicked.</p>
+          <div class="tl-expanded"><p>Hours felt like minutes. I remember thinking &mdash; I could talk to you forever and never run out of things to say.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1662,9 +1662,9 @@
         <div class="tl-card">
           <div class="photo-slot"><img src="assets/ThemomentWeShare.jpg" alt="Moments we share" /></div>
           <div class="tl-date">Timeless</div>
-          <h3 class="tl-title">The Laughter That Heals Me</h3>
-          <p class="tl-text">Your laughter is the sound my heart recognizes as home.</p>
-          <div class="tl-expanded"><p>On my worst days, just hearing you laugh reminds me that everything is going to be okay. You are my peace.</p></div>
+          <h3 class="tl-title">The Laughter We Share</h3>
+          <p class="tl-text">Your laughter is the kind of sound that fixes everything.</p>
+          <div class="tl-expanded"><p>Every silly joke, every burst of uncontrollable laughter &mdash; those are the moments I keep closest.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1674,8 +1674,8 @@
           <div class="photo-slot"><img src="assets/youbeimgyou.jpg" alt="You being you" /></div>
           <div class="tl-date">Every Day</div>
           <h3 class="tl-title">You, Simply Being You</h3>
-          <p class="tl-text">I fell in love with you — not the idea of you, but every raw, real, beautiful part.</p>
-          <div class="tl-expanded"><p>The way you care too much, the way you overthink, the way you love so deeply — all of it makes me fall harder every single day.</p></div>
+          <p class="tl-text">The world is richer because you exist in it.</p>
+          <div class="tl-expanded"><p>The way you care, the way you show up &mdash; you don't realize it, but you make everyone around you better.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1683,9 +1683,9 @@
       <div class="tl-item" onclick="toggleMemory(this)">
         <div class="tl-card">
           <div class="tl-date">April 21, 2026</div>
-          <h3 class="tl-title">Today &mdash; And Every Day After</h3>
-          <p class="tl-text">I don’t just love you today. I choose you every single morning.</p>
-          <div class="tl-expanded"><p>You are my forever person. My heart knew it before I did, and now I’m telling you — it’s always been you.</p></div>
+          <h3 class="tl-title">Today &mdash; Your Day</h3>
+          <p class="tl-text">Another year of you being remarkable.</p>
+          <div class="tl-expanded"><p>Here's to every dream you hold, every path you walk, and every star that shines for you tonight.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1694,14 +1694,14 @@
   </div>
 
   <div class="signoff">
-    <h2>I Love You, Haritha</h2>
+    <h2>Happy Birthday, Haritha</h2>
     <div class="final-divider"></div>
     <p>
-      You are my today, my tomorrow,<br>
-      and every beautiful thing in between.<br><br>
-      Forever yours.
+      You make ordinary moments extraordinary,<br>
+      just by being in them.<br><br>
+      Always.
     </p>
-    <button class="restart-btn" onclick="location.reload()">Read Again ❤</button>
+    <button class="restart-btn" onclick="location.reload()">Experience Again</button>
     <svg class="signature-svg" width="120" height="50" viewBox="0 0 120 50">
       <path d="M10 40 Q20 10 35 30 Q45 45 55 20 Q60 8 70 25 Q80 42 90 20 Q95 10 105 30 Q110 38 115 35" />
     </svg>
