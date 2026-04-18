@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday Haritha</title>
+  <title>For You, Haritha ❤</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
     .custom-cursor {
       position: fixed;
       width: 18px; height: 18px;
-      border: 1.5px solid rgba(201,169,110,0.5);
+      border: 1.5px solid rgba(200,100,120,0.5);
       border-radius: 50%;
       pointer-events: none;
       z-index: 9999;
@@ -37,19 +37,18 @@
     }
 
     .custom-cursor::after {
-      content: '';
+      content: '❤';
       position: absolute;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
-      width: 3px; height: 3px;
-      background: #c9a96e;
-      border-radius: 50%;
+      font-size: 6px;
+      line-height: 1;
     }
 
     .custom-cursor.hovering {
       width: 32px; height: 32px;
-      border-color: #ffd700;
-      background: rgba(201,169,110,0.06);
+      border-color: #e84393;
+      background: rgba(232,67,147,0.06);
     }
 
     /* ===== STAGE 0: ENVELOPE CEREMONY ===== */
@@ -75,13 +74,13 @@
     .envelope-body {
       width: 100%; height: 100%;
       background: linear-gradient(160deg, #1e1b16 0%, #14120f 60%, #0f0e0b 100%);
-      border: 1px solid rgba(201,169,110,0.18);
+      border: 1px solid rgba(200,100,120,0.18);
       border-radius: 8px;
       position: relative;
       box-shadow:
         0 20px 60px rgba(0,0,0,0.6),
         0 4px 20px rgba(0,0,0,0.3),
-        inset 0 1px 0 rgba(201,169,110,0.06);
+        inset 0 1px 0 rgba(200,100,120,0.06);
       overflow: hidden;
     }
 
@@ -91,7 +90,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent 10%, rgba(201,169,110,0.15) 50%, transparent 90%);
+      background: linear-gradient(90deg, transparent 10%, rgba(200,100,120,0.15) 50%, transparent 90%);
     }
 
     /* Triangular flap — sits on top, folds UP to open */
@@ -117,7 +116,7 @@
       border-right: 150px solid transparent;
       border-top: 110px solid transparent;
       border-bottom: 0;
-      box-shadow: inset 0 -1px 0 rgba(201,169,110,0.1);
+      box-shadow: inset 0 -1px 0 rgba(200,100,120,0.1);
     }
 
     .envelope-wrapper.open .envelope-flap {
@@ -218,7 +217,7 @@
       font-size: 0.7rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(201,169,110,0.3);
+      color: rgba(200,100,120,0.3);
       animation: tapPulse 2s ease-in-out infinite;
       transition: opacity 0.5s;
     }
@@ -254,7 +253,7 @@
     .screen-flash {
       position: fixed; inset: 0;
       z-index: 100;
-      background: radial-gradient(circle, rgba(255,215,0,0.2), transparent 70%);
+      background: radial-gradient(circle, rgba(232,67,147,0.2), transparent 70%);
       pointer-events: none;
       animation: flashPulse 0.6s ease-out forwards;
     }
@@ -292,14 +291,14 @@
       100% { opacity: 0; transform: scale(1.06) translateY(-15px); filter: blur(4px); }
     }
 
-    /* Golden wipe line between stages */
+    /* Romantic wipe line between stages */
     .stage-wipe {
       position: fixed;
       top: 50%; left: -100%;
       width: 100vw; height: 2px;
       z-index: 100;
-      background: linear-gradient(90deg, transparent, #c9a96e 30%, #ffd700 50%, #c9a96e 70%, transparent);
-      box-shadow: 0 0 20px 4px rgba(201,169,110,0.3), 0 0 60px 8px rgba(201,169,110,0.1);
+      background: linear-gradient(90deg, transparent, #c8687a 30%, #e84393 50%, #c8687a 70%, transparent);
+      box-shadow: 0 0 20px 4px rgba(232,67,147,0.3), 0 0 60px 8px rgba(232,67,147,0.1);
       pointer-events: none;
       animation: wipeAcross 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
@@ -316,7 +315,7 @@
       font-weight: 400;
       letter-spacing: 6px;
       text-transform: uppercase;
-      color: rgba(201,169,110,0.6);
+      color: rgba(200,100,120,0.6);
       margin-bottom: 30px;
       opacity: 0;
       animation: fadeSlideUp 1.2s ease 0.3s forwards;
@@ -325,7 +324,7 @@
     .intro-date {
       font-family: 'Great Vibes', cursive;
       font-size: 3.5rem;
-      color: #c9a96e;
+      color: #e84393;
       margin-bottom: 15px;
       opacity: 0;
       animation: fadeSlideUp 1.4s ease 0.8s forwards, gentleFloat 6s ease-in-out 2.2s infinite;
@@ -347,7 +346,7 @@
       font-family: 'Inter', sans-serif;
       font-size: 0.75rem;
       letter-spacing: 3px;
-      color: rgba(201,169,110,0.35);
+      color: rgba(200,100,120,0.35);
       text-transform: uppercase;
       margin-bottom: 50px;
       opacity: 0;
@@ -356,7 +355,7 @@
 
     .countdown span {
       display: inline-block;
-      color: rgba(201,169,110,0.6);
+      color: rgba(200,100,120,0.6);
       font-weight: 500;
       min-width: 20px;
       text-align: center;
@@ -375,9 +374,9 @@
     .begin-btn {
       padding: 16px 48px;
       background: transparent;
-      border: 1px solid rgba(201,169,110,0.4);
+      border: 1px solid rgba(200,100,120,0.4);
       border-radius: 50px;
-      color: #c9a96e;
+      color: #c8687a;
       font-family: 'Playfair Display', serif;
       font-size: 0.9rem;
       letter-spacing: 3px;
@@ -394,7 +393,7 @@
       content: '';
       position: absolute;
       top: 0; left: -100%; width: 100%; height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(201,169,110,0.12), transparent);
+      background: linear-gradient(90deg, transparent, rgba(232,67,147,0.12), transparent);
       animation: lightSweep 4s ease-in-out 3s infinite;
     }
 
@@ -404,13 +403,13 @@
     }
 
     @keyframes btnBreath {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(201,169,110,0); }
-      50% { box-shadow: 0 0 25px 0 rgba(201,169,110,0.08); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(232,67,147,0); }
+      50% { box-shadow: 0 0 25px 0 rgba(232,67,147,0.08); }
     }
 
     .begin-btn:hover {
-      border-color: #c9a96e;
-      box-shadow: 0 0 30px rgba(201,169,110,0.2);
+      border-color: #e84393;
+      box-shadow: 0 0 30px rgba(232,67,147,0.2);
       transform: translateY(-2px);
     }
 
@@ -510,15 +509,15 @@
       top: -30px; left: 50%;
       transform: translateX(-50%);
       width: 8px; height: 8px;
-      border: 1.5px solid rgba(255,180,0,0.6);
+      border: 1.5px solid rgba(232,67,147,0.6);
       border-radius: 50%;
       animation: ringBurst 0.8s ease-out forwards;
       pointer-events: none;
     }
 
     @keyframes ringBurst {
-      0%   { width: 8px; height: 8px; opacity: 0.8; border-color: rgba(255,180,0,0.7); }
-      100% { width: 70px; height: 70px; opacity: 0; border-color: rgba(255,180,0,0); margin-left: -31px; margin-top: -31px; }
+      0%   { width: 8px; height: 8px; opacity: 0.8; border-color: rgba(232,67,147,0.7); }
+      100% { width: 70px; height: 70px; opacity: 0; border-color: rgba(232,67,147,0); margin-left: -31px; margin-top: -31px; }
     }
 
     /* Warm ambient overlay — builds as candles light */
@@ -526,7 +525,7 @@
       position: fixed; inset: 0;
       z-index: 1;
       pointer-events: none;
-      background: radial-gradient(ellipse at 50% 60%, rgba(201,140,50,var(--warmth,0)), transparent 70%);
+      background: radial-gradient(ellipse at 50% 60%, rgba(232,67,147,var(--warmth,0)), transparent 70%);
       transition: opacity 1.5s ease;
     }
 
@@ -550,7 +549,7 @@
 
     .candle-label {
       font-size: 0.65rem;
-      color: rgba(201,169,110,0.5);
+      color: rgba(200,100,120,0.5);
       margin-top: 8px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -558,12 +557,12 @@
       transition: color 0.3s;
     }
 
-    .candle-unit.done .candle-label { color: #c9a96e; }
+    .candle-unit.done .candle-label { color: #e84393; }
 
     .candles-counter {
       font-family: 'Playfair Display', serif;
       font-size: 0.85rem;
-      color: rgba(201,169,110,0.4);
+      color: rgba(200,100,120,0.4);
       letter-spacing: 2px;
       opacity: 0;
       animation: fadeSlideUp 0.8s ease 1.4s forwards;
@@ -583,7 +582,7 @@
       font-family: 'Great Vibes', cursive;
       font-size: 3rem;
       color: transparent;
-      background: linear-gradient(135deg, #c9a96e, #ffd700, #fff8dc, #ffd700, #c9a96e);
+      background: linear-gradient(135deg, #c8687a, #e84393, #ffc0cb, #e84393, #c8687a);
       background-size: 300% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -595,8 +594,8 @@
     .wish-name {
       font-family: 'Great Vibes', cursive;
       font-size: 4rem;
-      color: #ffd700;
-      text-shadow: 0 0 40px rgba(255,215,0,0.2);
+      color: #e84393;
+      text-shadow: 0 0 40px rgba(232,67,147,0.2);
       animation: nameGlow 3s ease-in-out infinite alternate, wishNameIn 1.5s ease 0.5s both;
       margin-bottom: 25px;
     }
@@ -617,8 +616,8 @@
     }
 
     @keyframes nameGlow {
-      from { text-shadow: 0 0 30px rgba(255,215,0,0.15); }
-      to   { text-shadow: 0 0 50px rgba(255,215,0,0.35); }
+      from { text-shadow: 0 0 30px rgba(232,67,147,0.15); }
+      to   { text-shadow: 0 0 50px rgba(232,67,147,0.35); }
     }
 
     .wish-lines {
@@ -645,7 +644,7 @@
     .wish-line.typing::after {
       content: '|';
       display: inline-block;
-      color: #c9a96e;
+      color: #e84393;
       animation: cursorBlink 0.8s step-end infinite;
       margin-left: 3px;
       font-weight: 300;
@@ -656,18 +655,18 @@
       50% { opacity: 0; }
     }
 
-    .wish-line strong { color: #e8c875; font-weight: 500; }
+    .wish-line strong { color: #f0a0b5; font-weight: 500; }
 
     .tap-next {
       font-size: 0.8rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #c9a96e;
+      color: #c8687a;
       cursor: pointer;
       animation: tapPulse 1.8s ease-in-out infinite;
       user-select: none;
       padding: 12px 32px;
-      border: 1px solid rgba(201,169,110,0.35);
+      border: 1px solid rgba(200,100,120,0.35);
       border-radius: 50px;
       margin-top: 10px;
       display: inline-block;
@@ -675,8 +674,8 @@
     }
 
     .tap-next:hover {
-      border-color: #c9a96e;
-      box-shadow: 0 0 20px rgba(201,169,110,0.15);
+      border-color: #e84393;
+      box-shadow: 0 0 20px rgba(232,67,147,0.15);
     }
 
     @keyframes tapPulse {
@@ -690,7 +689,7 @@
       font-size: 1rem;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: rgba(201,169,110,0.5);
+      color: rgba(200,100,120,0.5);
       margin-bottom: 15px;
     }
 
@@ -716,8 +715,8 @@
       cursor: pointer;
       position: relative;
       overflow: hidden;
-      border: 1px solid rgba(201,169,110,0.18);
-      background: rgba(20,18,15,0.6);
+      border: 1px solid rgba(200,100,120,0.18);
+      background: rgba(20,15,18,0.6);
       backdrop-filter: blur(8px);
       transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
@@ -754,13 +753,13 @@
     }
 
     .gift-box:hover {
-      border-color: rgba(201,169,110,0.4);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(201,169,110,0.03);
+      border-color: rgba(232,67,147,0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(232,67,147,0.03);
     }
 
     .gift-box .gift-icon {
       font-size: 2.2rem;
-      color: rgba(201,169,110,0.6);
+      color: rgba(200,100,120,0.6);
       transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s;
       position: absolute;
     }
@@ -785,30 +784,30 @@
     .gift-reveal p {
       font-family: 'Playfair Display', serif;
       font-size: 0.85rem;
-      color: #c9a96e;
+      color: #c8687a;
       line-height: 1.6;
       font-style: italic;
     }
 
     .gift-box.opened {
       opacity: 1;
-      background: rgba(201,169,110,0.05);
-      border-color: rgba(201,169,110,0.3);
+      background: rgba(232,67,147,0.05);
+      border-color: rgba(200,100,120,0.3);
       animation: giftOpened 0.6s ease forwards;
     }
 
     @keyframes giftOpened {
-      0% { box-shadow: 0 0 0 0 rgba(201,169,110,0.3); }
-      50% { box-shadow: 0 0 25px 5px rgba(201,169,110,0.12); }
-      100% { box-shadow: 0 0 0 0 rgba(201,169,110,0); }
+      0% { box-shadow: 0 0 0 0 rgba(232,67,147,0.3); }
+      50% { box-shadow: 0 0 25px 5px rgba(232,67,147,0.12); }
+      100% { box-shadow: 0 0 0 0 rgba(232,67,147,0); }
     }
 
     .gifts-continue {
       padding: 14px 40px;
       background: transparent;
-      border: 1px solid rgba(201,169,110,0.3);
+      border: 1px solid rgba(200,100,120,0.3);
       border-radius: 50px;
-      color: #c9a96e;
+      color: #c8687a;
       font-family: 'Playfair Display', serif;
       font-size: 0.8rem;
       letter-spacing: 3px;
@@ -825,8 +824,8 @@
     }
 
     .gifts-continue:hover {
-      border-color: #c9a96e;
-      box-shadow: 0 0 25px rgba(201,169,110,0.12);
+      border-color: #e84393;
+      box-shadow: 0 0 25px rgba(232,67,147,0.12);
     }
 
     /* ===== STAGE 5: SCROLLABLE FINALE ===== */
@@ -878,7 +877,7 @@
     .collage-center h2 {
       font-family: 'Great Vibes', cursive;
       font-size: 3.5rem;
-      color: #c9a96e;
+      color: #e84393;
       margin-bottom: 20px;
       opacity: 0;
       animation: fadeSlideUp 1.5s ease 0.3s forwards;
@@ -886,7 +885,7 @@
 
     .final-divider {
       width: 60px; height: 1px;
-      background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+      background: linear-gradient(90deg, transparent, #e84393, transparent);
       margin: 20px auto;
       opacity: 0;
       animation: dividerGrow 1.2s ease 1s forwards;
@@ -924,7 +923,7 @@
     .mem-heading h2 {
       font-family: 'Great Vibes', cursive;
       font-size: 3rem;
-      color: #c9a96e;
+      color: #e84393;
       opacity: 0;
       transition: opacity 1s ease;
     }
@@ -941,7 +940,7 @@
       top: 0; left: 50%;
       transform: translateX(-50%);
       width: 1px; height: 100%;
-      background: linear-gradient(180deg, transparent, rgba(201,169,110,0.25) 10%, rgba(201,169,110,0.25) 90%, transparent);
+      background: linear-gradient(180deg, transparent, rgba(200,100,120,0.25) 10%, rgba(200,100,120,0.25) 90%, transparent);
     }
 
     .tl-item {
@@ -964,15 +963,15 @@
       position: absolute;
       top: 18px;
       width: 8px; height: 8px;
-      background: #c9a96e;
+      background: #e84393;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(201,169,110,0.5);
+      box-shadow: 0 0 10px rgba(232,67,147,0.5);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .tl-item:hover::after {
       transform: scale(1.5);
-      box-shadow: 0 0 20px rgba(201,169,110,0.7);
+      box-shadow: 0 0 20px rgba(232,67,147,0.7);
     }
 
     .tl-item:nth-child(odd)::after { right: -27px; }
@@ -980,7 +979,7 @@
 
     .tl-card {
       background: rgba(20,18,15,0.5);
-      border: 1px solid rgba(201,169,110,0.08);
+      border: 1px solid rgba(200,100,120,0.08);
       border-radius: 12px;
       padding: 24px;
       backdrop-filter: blur(10px);
@@ -988,7 +987,7 @@
     }
 
     .tl-item:hover .tl-card {
-      border-color: rgba(201,169,110,0.2);
+      border-color: rgba(200,100,120,0.2);
       transform: translateY(-3px);
       box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     }
@@ -1027,7 +1026,7 @@
       font-size: 0.65rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #c9a96e;
+      color: #c8687a;
       margin-bottom: 6px;
       font-family: 'Inter', sans-serif;
       font-weight: 500;
@@ -1036,7 +1035,7 @@
     .tl-title {
       font-family: 'Great Vibes', cursive;
       font-size: 1.5rem;
-      color: #e8c875;
+      color: #f0a0b5;
       margin-bottom: 8px;
     }
 
@@ -1063,14 +1062,14 @@
       padding-top: 12px;
       font-family: 'Playfair Display', serif;
       font-size: 0.85rem;
-      color: rgba(201,169,110,0.6);
+      color: rgba(200,100,120,0.6);
       font-style: italic;
       line-height: 1.7;
     }
 
     .tl-tap-hint {
       font-size: 0.6rem;
-      color: rgba(201,169,110,0.25);
+      color: rgba(200,100,120,0.25);
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-top: 10px;
@@ -1086,7 +1085,7 @@
     .signoff h2 {
       font-family: 'Great Vibes', cursive;
       font-size: 2.8rem;
-      color: #c9a96e;
+      color: #e84393;
       margin-bottom: 20px;
       opacity: 0;
       transform: translateY(20px);
@@ -1121,9 +1120,9 @@
       margin-top: 40px;
       padding: 12px 36px;
       background: transparent;
-      border: 1px solid rgba(201,169,110,0.2);
+      border: 1px solid rgba(200,100,120,0.2);
       border-radius: 50px;
-      color: rgba(201,169,110,0.5);
+      color: rgba(200,100,120,0.5);
       font-family: 'Inter', sans-serif;
       font-size: 0.7rem;
       letter-spacing: 3px;
@@ -1133,18 +1132,18 @@
     }
 
     .restart-btn:hover {
-      border-color: rgba(201,169,110,0.5);
-      color: #c9a96e;
+      border-color: rgba(232,67,147,0.5);
+      color: #e84393;
     }
 
     /* ===== GOLD DUST MOUSE ===== */
     .dust {
       position: fixed;
       border-radius: 50%;
-      background: radial-gradient(circle, #ffd700, #b8860b);
+      background: radial-gradient(circle, #e84393, #c8687a);
       pointer-events: none;
       z-index: 50;
-      box-shadow: 0 0 4px 1px rgba(255,215,0,0.4);
+      box-shadow: 0 0 4px 1px rgba(232,67,147,0.4);
       animation: dustOut 1s ease-out forwards;
     }
 
@@ -1160,7 +1159,7 @@
       border-radius: 50%;
       pointer-events: none;
       z-index: 2;
-      box-shadow: 0 0 6px 2px rgba(255,255,255,0.5), 0 0 12px 4px rgba(201,169,110,0.2);
+      box-shadow: 0 0 6px 2px rgba(255,255,255,0.5), 0 0 12px 4px rgba(232,67,147,0.2);
     }
 
     .shooting-star::after {
@@ -1168,7 +1167,7 @@
       position: absolute;
       top: 0; right: 0;
       width: 100px; height: 1.5px;
-      background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(201,169,110,0.2) 40%, transparent);
+      background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(232,67,147,0.2) 40%, transparent);
       transform-origin: right center;
     }
 
@@ -1182,7 +1181,7 @@
 
     .petal svg {
       width: 14px; height: 14px;
-      fill: rgba(201,169,110,0.25);
+      fill: rgba(232,67,147,0.25);
     }
 
     /* ===== VIGNETTE OVERLAY ===== */
@@ -1195,9 +1194,9 @@
 
     /* ===== LETTER SHIMMER ===== */
     @keyframes letterShimmer {
-      0%   { color: #ffd700; text-shadow: 0 0 10px rgba(255,215,0,0.3); }
-      50%  { color: #fff8dc; text-shadow: 0 0 25px rgba(255,215,0,0.5), 0 0 50px rgba(201,169,110,0.2); }
-      100% { color: #ffd700; text-shadow: 0 0 10px rgba(255,215,0,0.3); }
+      0%   { color: #e84393; text-shadow: 0 0 10px rgba(232,67,147,0.3); }
+      50%  { color: #ffc0cb; text-shadow: 0 0 25px rgba(232,67,147,0.5), 0 0 50px rgba(200,100,120,0.2); }
+      100% { color: #e84393; text-shadow: 0 0 10px rgba(232,67,147,0.3); }
     }
 
     .wish-name .shimmer-letter {
@@ -1229,7 +1228,7 @@
       max-height: 85vh;
       object-fit: contain;
       border-radius: 8px;
-      box-shadow: 0 0 60px rgba(201,169,110,0.15);
+      box-shadow: 0 0 60px rgba(232,67,147,0.15);
       transform: scale(0.85);
       transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -1245,8 +1244,8 @@
       font-size: 0.7rem;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(201,169,110,0.5);
-      border: 1px solid rgba(201,169,110,0.2);
+      color: rgba(200,100,120,0.5);
+      border: 1px solid rgba(200,100,120,0.2);
       border-radius: 30px;
       padding: 8px 20px;
       cursor: pointer;
@@ -1254,8 +1253,8 @@
     }
 
     .lightbox-close:hover {
-      border-color: #c9a96e;
-      color: #c9a96e;
+      border-color: #e84393;
+      color: #e84393;
     }
 
     /* ===== HANDWRITTEN SIGNATURE ===== */
@@ -1268,7 +1267,7 @@
     .signoff.vis .signature-svg { opacity: 1; }
 
     .signature-svg path {
-      stroke: #c9a96e;
+      stroke: #e84393;
       stroke-width: 2;
       fill: none;
       stroke-dasharray: 300;
@@ -1291,7 +1290,7 @@
       z-index: 500;
       width: 42px; height: 42px;
       border-radius: 50%;
-      border: 1px solid rgba(201,169,110,0.2);
+      border: 1px solid rgba(200,100,120,0.2);
       background: rgba(10,10,18,0.7);
       backdrop-filter: blur(10px);
       cursor: pointer;
@@ -1302,11 +1301,11 @@
       padding: 0;
     }
 
-    .music-btn:hover { border-color: rgba(201,169,110,0.5); }
+    .music-btn:hover { border-color: rgba(232,67,147,0.5); }
 
     .music-btn svg {
       width: 16px; height: 16px;
-      fill: none; stroke: #c9a96e;
+      fill: none; stroke: #e84393;
       stroke-width: 1.5; stroke-linecap: round;
     }
 
@@ -1315,8 +1314,8 @@
     }
 
     @keyframes mPulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(201,169,110,0.25); }
-      50% { box-shadow: 0 0 0 8px rgba(201,169,110,0); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(232,67,147,0.25); }
+      50% { box-shadow: 0 0 0 8px rgba(232,67,147,0); }
     }
 
     /* ===== RESPONSIVE: TABLET & SMALL DESKTOP ===== */
@@ -1518,44 +1517,44 @@
     <div class="wax-seal"><span>H</span></div>
     <div class="envelope-body"></div>
     <div class="letter-card">
-      <p>Something special<br/>awaits you, Haritha...</p>
+      <p>My heart wrote this<br/>just for you, Haritha…</p>
     </div>
   </div>
-  <p class="envelope-hint">tap to open</p>
+  <p class="envelope-hint">tap to open your love letter</p>
 </div>
 
 <!-- ===== STAGE 1: INTRO ===== -->
 <div class="stage" id="stage1">
-  <p class="intro-title">A Little Something</p>
-  <h1 class="intro-date">April 21</h1>
-  <p class="intro-for">Exclusively for Haritha</p>
+  <p class="intro-title">A Love Letter</p>
+  <h1 class="intro-date">For You, Always</h1>
+  <p class="intro-for">Written from the heart for Haritha</p>
   <div class="countdown" id="countdown"></div>
-  <button class="begin-btn" onclick="startJourney()">Begin the Journey</button>
+  <button class="begin-btn" onclick="startJourney()">Open Your Heart</button>
 </div>
 
 <!-- ===== STAGE 2: LIGHT CANDLES ===== -->
 <div class="stage" id="stage2">
-  <p class="candles-prompt">Tap each candle to light it</p>
+  <p class="candles-prompt">Light each flame with a reason I love you</p>
   <div class="candles-row">
     <div class="candle-unit c1" onclick="lightCandle(this, 0)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f0"></div></div>
-      <p class="candle-label">joy</p>
+      <p class="candle-label">your smile</p>
     </div>
     <div class="candle-unit c2" onclick="lightCandle(this, 1)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f1"></div></div>
-      <p class="candle-label">love</p>
+      <p class="candle-label">your heart</p>
     </div>
     <div class="candle-unit c3" onclick="lightCandle(this, 2)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f2"></div></div>
-      <p class="candle-label">dreams</p>
+      <p class="candle-label">your soul</p>
     </div>
     <div class="candle-unit c4" onclick="lightCandle(this, 3)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f3"></div></div>
-      <p class="candle-label">light</p>
+      <p class="candle-label">your voice</p>
     </div>
     <div class="candle-unit c5" onclick="lightCandle(this, 4)">
       <div class="candle-stick"><div class="wick"></div><div class="flame" id="f4"></div></div>
-      <p class="candle-label">you</p>
+      <p class="candle-label">all of you</p>
     </div>
   </div>
   <p class="candles-counter" id="candleCount">0 / 5</p>
@@ -1564,16 +1563,16 @@
 <!-- ===== STAGE 3: BIRTHDAY WISH ===== -->
 <div class="stage" id="stage3">
   <div class="wish-stage">
-    <h1 class="wish-title">Happy Birthday</h1>
+    <h1 class="wish-title">I Love You</h1>
     <h2 class="wish-name"><span class="shimmer-letter" style="animation-delay:0s">H</span><span class="shimmer-letter" style="animation-delay:0.3s">a</span><span class="shimmer-letter" style="animation-delay:0.6s">r</span><span class="shimmer-letter" style="animation-delay:0.9s">i</span><span class="shimmer-letter" style="animation-delay:1.2s">t</span><span class="shimmer-letter" style="animation-delay:1.5s">h</span><span class="shimmer-letter" style="animation-delay:1.8s">a</span></h2>
     <div class="wish-lines" id="wishLines">
-      <p class="wish-line">Today is <strong>your</strong> day.</p>
-      <p class="wish-line">The world feels warmer because of you.</p>
-      <p class="wish-line">May this year bring you quiet joys,</p>
-      <p class="wish-line">beautiful surprises,</p>
-      <p class="wish-line">and all the love your heart can hold.</p>
-      <p class="wish-line">You deserve every bit of happiness &mdash;</p>
-      <p class="wish-line">and <strong>infinitely</strong> more.</p>
+      <p class="wish-line">You are the <strong>reason</strong> my heart beats differently.</p>
+      <p class="wish-line">Before you, I didn’t know what love felt like.</p>
+      <p class="wish-line">Now every moment with you feels like</p>
+      <p class="wish-line">the most beautiful chapter of my life.</p>
+      <p class="wish-line">You make me want to be <strong>better</strong>,</p>
+      <p class="wish-line">to love harder, to hold on tighter.</p>
+      <p class="wish-line">I am so <strong>deeply</strong> in love with you.</p>
     </div>
     <p class="tap-next" id="tapNext" onclick="revealNextLine()">tap to reveal each line</p>
   </div>
@@ -1581,32 +1580,32 @@
 
 <!-- ===== STAGE 4: GIFT BOXES ===== -->
 <div class="stage" id="stage4">
-  <p class="gifts-title">Unwrap your wishes</p>
-  <p class="gifts-sub">Tap each box to reveal what's inside</p>
+  <p class="gifts-title">Reasons I Love You</p>
+  <p class="gifts-sub">Tap each one to uncover my heart</p>
   <div class="gift-grid">
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#9733;</span>
-      <div class="gift-reveal"><p>May every star tonight remind you how special you are</p></div>
+      <span class="gift-icon">❤</span>
+      <div class="gift-reveal"><p>The way you look at me makes me feel like the luckiest person alive</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#9825;</span>
-      <div class="gift-reveal"><p>You are loved more than you will ever know</p></div>
+      <span class="gift-icon">✨</span>
+      <div class="gift-reveal"><p>Your laugh is my favourite sound in this entire universe</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#10047;</span>
-      <div class="gift-reveal"><p>May your days bloom like the most beautiful garden</p></div>
+      <span class="gift-icon">♡</span>
+      <div class="gift-reveal"><p>You make even the most ordinary moments feel like a fairy tale</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#9790;</span>
-      <div class="gift-reveal"><p>Even the moon envies the glow you carry</p></div>
+      <span class="gift-icon">∞</span>
+      <div class="gift-reveal"><p>My love for you has no end — it only grows deeper every day</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#9728;</span>
-      <div class="gift-reveal"><p>Your smile could light up the darkest sky</p></div>
+      <span class="gift-icon">✶</span>
+      <div class="gift-reveal"><p>You are my calm in every storm, my warmth in every cold night</p></div>
     </div>
     <div class="gift-box" onclick="openGift(this)">
-      <span class="gift-icon">&#8734;</span>
-      <div class="gift-reveal"><p>This is my wish for you &mdash; happiness without end</p></div>
+      <span class="gift-icon">❀</span>
+      <div class="gift-reveal"><p>I choose you — today, tomorrow, and every day after that</p></div>
     </div>
   </div>
   <button class="gifts-continue" id="giftsContinue" onclick="goFinale()">Continue</button>
@@ -1620,18 +1619,19 @@
       <source src="assets/background.mp4" type="video/mp4" />
     </video>
     <div class="collage-center">
-      <h2>This Journey Was Made for You</h2>
+      <h2>Every Word Here Is for You</h2>
       <div class="final-divider"></div>
       <p>
         Every click, every light, every word &mdash;<br>
-        all of it was just for you, Haritha.
+        was my way of saying what I can’t always say out loud.<br>
+        I love you, Haritha. More than you’ll ever know.
       </p>
     </div>
   </div>
 
   <div class="memories-section">
     <div class="mem-heading">
-      <h2>Our Moments</h2>
+      <h2>Our Story</h2>
       <div class="final-divider"></div>
     </div>
     <div class="tl">
@@ -1641,8 +1641,8 @@
           <div class="photo-slot"><img src="assets/Thedaywemet.jpg" alt="The day we met" /></div>
           <div class="tl-date">The Beginning</div>
           <h3 class="tl-title">The Day We Met</h3>
-          <p class="tl-text">Some moments change everything. Meeting you was one of them.</p>
-          <div class="tl-expanded"><p>That day replays in my mind like a favourite scene &mdash; a small moment that rewrote everything after it.</p></div>
+          <p class="tl-text">Some moments change everything. Meeting you was the most beautiful accident of my life.</p>
+          <div class="tl-expanded"><p>I didn’t know it then, but that day, my heart chose you before my mind even understood why.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1652,8 +1652,8 @@
           <div class="photo-slot"><img src="assets/FirstConvo.jpg" alt="First conversation" /></div>
           <div class="tl-date">A Cherished Day</div>
           <h3 class="tl-title">First Real Conversation</h3>
-          <p class="tl-text">When time stood still and everything just clicked.</p>
-          <div class="tl-expanded"><p>Hours felt like minutes. I remember thinking &mdash; I could talk to you forever and never run out of things to say.</p></div>
+          <p class="tl-text">When hours felt like seconds and silence felt comfortable.</p>
+          <div class="tl-expanded"><p>I remember thinking — I could listen to you talk forever and never get tired. That’s when I knew this was different.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1662,9 +1662,9 @@
         <div class="tl-card">
           <div class="photo-slot"><img src="assets/ThemomentWeShare.jpg" alt="Moments we share" /></div>
           <div class="tl-date">Timeless</div>
-          <h3 class="tl-title">The Laughter We Share</h3>
-          <p class="tl-text">Your laughter is the kind of sound that fixes everything.</p>
-          <div class="tl-expanded"><p>Every silly joke, every burst of uncontrollable laughter &mdash; those are the moments I keep closest.</p></div>
+          <h3 class="tl-title">The Laughter That Heals Me</h3>
+          <p class="tl-text">Your laughter is the sound my heart recognizes as home.</p>
+          <div class="tl-expanded"><p>On my worst days, just hearing you laugh reminds me that everything is going to be okay. You are my peace.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1674,8 +1674,8 @@
           <div class="photo-slot"><img src="assets/youbeimgyou.jpg" alt="You being you" /></div>
           <div class="tl-date">Every Day</div>
           <h3 class="tl-title">You, Simply Being You</h3>
-          <p class="tl-text">The world is richer because you exist in it.</p>
-          <div class="tl-expanded"><p>The way you care, the way you show up &mdash; you don't realize it, but you make everyone around you better.</p></div>
+          <p class="tl-text">I fell in love with you — not the idea of you, but every raw, real, beautiful part.</p>
+          <div class="tl-expanded"><p>The way you care too much, the way you overthink, the way you love so deeply — all of it makes me fall harder every single day.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1683,9 +1683,9 @@
       <div class="tl-item" onclick="toggleMemory(this)">
         <div class="tl-card">
           <div class="tl-date">April 21, 2026</div>
-          <h3 class="tl-title">Today &mdash; Your Day</h3>
-          <p class="tl-text">Another year of you being remarkable.</p>
-          <div class="tl-expanded"><p>Here's to every dream you hold, every path you walk, and every star that shines for you tonight.</p></div>
+          <h3 class="tl-title">Today &mdash; And Every Day After</h3>
+          <p class="tl-text">I don’t just love you today. I choose you every single morning.</p>
+          <div class="tl-expanded"><p>You are my forever person. My heart knew it before I did, and now I’m telling you — it’s always been you.</p></div>
           <p class="tl-tap-hint">tap to read more</p>
         </div>
       </div>
@@ -1694,14 +1694,14 @@
   </div>
 
   <div class="signoff">
-    <h2>Happy Birthday, Haritha</h2>
+    <h2>I Love You, Haritha</h2>
     <div class="final-divider"></div>
     <p>
-      You make ordinary moments extraordinary,<br>
-      just by being in them.<br><br>
-      Always.
+      You are my today, my tomorrow,<br>
+      and every beautiful thing in between.<br><br>
+      Forever yours.
     </p>
-    <button class="restart-btn" onclick="location.reload()">Experience Again</button>
+    <button class="restart-btn" onclick="location.reload()">Read Again ❤</button>
     <svg class="signature-svg" width="120" height="50" viewBox="0 0 120 50">
       <path d="M10 40 Q20 10 35 30 Q45 45 55 20 Q60 8 70 25 Q80 42 90 20 Q95 10 105 30 Q110 38 115 35" />
     </svg>
@@ -1950,7 +1950,7 @@
       const a = (Math.sin(t*d.s*50+d.p)+1)*0.3+0.08;
 
       const g = bx.createRadialGradient(drawX,drawY,0,drawX,drawY,d.r*6);
-      g.addColorStop(0, `rgba(201,169,110,${a*0.25})`);
+      g.addColorStop(0, `rgba(232,67,147,${a*0.25})`);
       g.addColorStop(1, 'transparent');
       bx.beginPath();
       bx.arc(drawX, drawY, d.r*6, 0, Math.PI*2);
@@ -1959,7 +1959,7 @@
 
       bx.beginPath();
       bx.arc(drawX, drawY, d.r, 0, Math.PI*2);
-      bx.fillStyle = `rgba(255,230,180,${a})`;
+      bx.fillStyle = `rgba(255,182,193,${a})`;
       bx.fill();
     }
     requestAnimationFrame(drawBg);
@@ -1977,7 +1977,7 @@
 
   function fireCf() {
     cc.style.display = 'block'; initCf(); cfOn = true;
-    const cols = ['#c9a96e','#ffd700','#d4af37','#fff8dc','#b8860b','#e8c875','#f5e6cc'];
+    const cols = ['#e84393','#c8687a','#fd79a8','#ffc0cb','#d63031','#fab1a0','#ff7675'];
     const cfCount = isMobile ? 80 : 180;
     for (let i = 0; i < cfCount; i++) {
       cfs.push({
@@ -2384,7 +2384,7 @@
     if (!petalsActive) return;
     const p = document.createElement('div');
     p.className = 'petal';
-    p.innerHTML = '<svg viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.31 2.69 6 6 6h4c3.31 0 6-2.69 6-6 0-4.42-3.58-8-8-8z"/></svg>';
+    p.innerHTML = '<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
     const startX = Math.random() * innerWidth;
     const drift = (Math.random() - 0.5) * 150;
     const dur = 6000 + Math.random() * 4000;
@@ -2393,7 +2393,7 @@
 
     p.querySelector('svg').style.width = size + 'px';
     p.querySelector('svg').style.height = size + 'px';
-    p.querySelector('svg').style.fill = `rgba(201,169,110,${0.12 + Math.random()*0.15})`;
+    p.querySelector('svg').style.fill = `rgba(232,67,147,${0.12 + Math.random()*0.15})`;
     p.style.left = startX + 'px';
     p.style.top = '-20px';
     document.body.appendChild(p);
@@ -2448,7 +2448,7 @@
           x, y: innerHeight,
           vy: -(8 + Math.random() * 4),
           targetY: innerHeight * (0.15 + Math.random() * 0.25),
-          hue: Math.random() * 60 + 20 // warm golds
+          hue: Math.random() * 30 + 330 // romantic pinks/reds
         });
         playSfx('boom');
       }, i * 500);
@@ -2490,13 +2490,13 @@
       // Draw rocket
       fwx.beginPath();
       fwx.arc(r.x, r.y, 2, 0, Math.PI * 2);
-      fwx.fillStyle = '#ffd700';
+      fwx.fillStyle = '#e84393';
       fwx.fill();
       // Trail
       fwx.beginPath();
       fwx.moveTo(r.x, r.y);
       fwx.lineTo(r.x + (Math.random() - 0.5) * 2, r.y + 15);
-      fwx.strokeStyle = 'rgba(255,215,0,0.4)';
+      fwx.strokeStyle = 'rgba(232,67,147,0.4)';
       fwx.lineWidth = 1;
       fwx.stroke();
 
